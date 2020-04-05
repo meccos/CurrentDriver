@@ -1,0 +1,569 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"292 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 292:     struct {
+[s S12 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S12 . RAIF INTF T0IF RAIE INTE T0IE PEIE GIE ]
+"302
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 302:     struct {
+[s S13 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S13 . . TMR0IF . TMR0IE ]
+"291
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 291: typedef union {
+[u S11 `S12 1 `S13 1 ]
+[n S11 . . . ]
+"309
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 309: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS11 ~T0 @X0 0 e@11 ]
+"216
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 216: extern volatile unsigned char PORTC __attribute__((address(0x007)));
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"781
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 781: extern volatile unsigned char TRISC __attribute__((address(0x087)));
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"787
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 787:     struct {
+[s S34 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S34 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 ]
+"786
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 786: typedef union {
+[u S33 `S34 1 ]
+[n S33 . . ]
+"796
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 796: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x087)));
+[v _TRISCbits `VS33 ~T0 @X0 0 e@135 ]
+"570
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 570:     struct {
+[s S24 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S24 . ADON GO_nDONE CHS . VCFG ADFM ]
+"578
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 578:     struct {
+[s S25 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S25 . . GO CHS0 CHS1 CHS2 ]
+"585
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 585:     struct {
+[s S26 :1 `uc 1 :1 `uc 1 ]
+[n S26 . . nDONE ]
+"589
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 589:     struct {
+[s S27 :1 `uc 1 :1 `uc 1 ]
+[n S27 . . GO_DONE ]
+"569
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 569: typedef union {
+[u S23 `S24 1 `S25 1 `S26 1 `S27 1 ]
+[n S23 . . . . . ]
+"594
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 594: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x01F)));
+[v _ADCON0bits `VS23 ~T0 @X0 0 e@31 ]
+"1384
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1384:     struct {
+[s S64 :4 `uc 1 :3 `uc 1 ]
+[n S64 . . ADCS ]
+"1388
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1388:     struct {
+[s S65 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S65 . . ADCS0 ADCS1 ADCS2 ]
+"1383
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1383: typedef union {
+[u S63 `S64 1 `S65 1 ]
+[n S63 . . . ]
+"1395
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1395: extern volatile ADCON1bits_t ADCON1bits __attribute__((address(0x09F)));
+[v _ADCON1bits `VS63 ~T0 @X0 0 e@159 ]
+"973
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 973: extern volatile unsigned char ANSEL __attribute__((address(0x091)));
+[v _ANSEL `Vuc ~T0 @X0 0 e@145 ]
+"979
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 979:     struct {
+[s S45 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S45 . ANS0 ANS1 ANS2 ANS3 ANS4 ANS5 ANS6 ANS7 ]
+"978
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 978: typedef union {
+[u S44 `S45 1 ]
+[n S44 . . ]
+"990
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 990: extern volatile ANSELbits_t ANSELbits __attribute__((address(0x091)));
+[v _ANSELbits `VS44 ~T0 @X0 0 e@145 ]
+"837
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 837:     struct {
+[s S36 :1 `uc 1 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S36 . TMR1IE . CMIE . ADIE EEIE ]
+"845
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 845:     struct {
+[s S37 :1 `uc 1 ]
+[n S37 . T1IE ]
+"836
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 836: typedef union {
+[u S35 `S36 1 `S37 1 ]
+[n S35 . . . ]
+"849
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 849: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x08C)));
+[v _PIE1bits `VS35 ~T0 @X0 0 e@140 ]
+"222
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 222:     struct {
+[s S8 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S8 . RC0 RC1 RC2 RC3 RC4 RC5 ]
+"221
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 221: typedef union {
+[u S7 `S8 1 ]
+[n S7 . . ]
+"231
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 231: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x007)));
+[v _PORTCbits `VS7 ~T0 @X0 0 e@7 ]
+"557
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 557: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 218: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"268
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 268: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"288
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 288: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"366
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 366: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"414
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 414: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"421
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 421: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"428
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 428: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"435
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 435: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"500
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 500: __asm("CMCON equ 019h");
+[; <" CMCON equ 019h ;# ">
+"559
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 559: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"566
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 566: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"656
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 656: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"733
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 733: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"783
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 783: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"833
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 833: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"881
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 881: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"915
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 915: __asm("OSCCAL equ 090h");
+[; <" OSCCAL equ 090h ;# ">
+"975
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 975: __asm("ANSEL equ 091h");
+[; <" ANSEL equ 091h ;# ">
+"1037
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1037: __asm("WPUA equ 095h");
+[; <" WPUA equ 095h ;# ">
+"1042
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1042: __asm("WPU equ 095h");
+[; <" WPU equ 095h ;# ">
+"1125
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1125: __asm("IOCA equ 096h");
+[; <" IOCA equ 096h ;# ">
+"1130
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1130: __asm("IOC equ 096h");
+[; <" IOC equ 096h ;# ">
+"1223
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1223: __asm("VRCON equ 099h");
+[; <" VRCON equ 099h ;# ">
+"1283
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1283: __asm("EEDAT equ 09Ah");
+[; <" EEDAT equ 09Ah ;# ">
+"1288
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1288: __asm("EEDATA equ 09Ah");
+[; <" EEDATA equ 09Ah ;# ">
+"1321
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1321: __asm("EEADR equ 09Bh");
+[; <" EEADR equ 09Bh ;# ">
+"1328
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1328: __asm("EECON1 equ 09Ch");
+[; <" EECON1 equ 09Ch ;# ">
+"1366
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1366: __asm("EECON2 equ 09Dh");
+[; <" EECON2 equ 09Dh ;# ">
+"1373
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1373: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"1380
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1380: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"24 CurrentDriver.c
+[; ;CurrentDriver.c: 24:     ANSEL = 0x00;
+[p x FOSC = 0x5  WDTE = 0x0  PWRTE = 0x1  MCLRE = 0x0  BOREN = 0x0  CP = 0x1  CPD = 0x1 ]
+"26
+[; ;CurrentDriver.c: 26: 
+[v _wVoltageRead `uc ~T0 @X0 1 e ]
+[i _wVoltageRead
+-> -> 0 `i `uc
+]
+"27
+[; ;CurrentDriver.c: 27:     PIE1bits.ADIE = 0;
+[v _wVref `uc ~T0 @X0 1 e ]
+[i _wVref
+-> -> 15 `i `uc
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"29
+[; ;CurrentDriver.c: 29:     INTCONbits.GIE = 0;
+[v _main `(v ~T0 @X0 1 ef ]
+"30
+[; ;CurrentDriver.c: 30: 
+{
+[e :U _main ]
+[f ]
+"31
+[; ;CurrentDriver.c: 31:     for(uint16_t i=0; i< 65500;i++)
+[v _ErrorCode `uc ~T0 @X0 1 a ]
+[e = _ErrorCode -> -> 0 `i `uc ]
+"33
+[; ;CurrentDriver.c: 33:        __asm__ __volatile__ ("nop");
+[v _NB_Wait `i ~T0 @X0 1 a ]
+[e = _NB_Wait -> 0 `i ]
+"34
+[; ;CurrentDriver.c: 34:     }
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"38
+[; ;CurrentDriver.c: 38:  while(1)
+[e = _PORTC -> -> 0 `i `uc ]
+"39
+[; ;CurrentDriver.c: 39:  {
+[e = _TRISC -> -> 255 `i `uc ]
+"40
+[; ;CurrentDriver.c: 40:     PORTCbits.RC5 = 1;
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+"41
+[; ;CurrentDriver.c: 41: 
+[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
+"42
+[; ;CurrentDriver.c: 42:     for(i=0; i< NB_Wait;i++)
+[e = . . _ADCON0bits 1 2 -> -> 0 `i `uc ]
+"43
+[; ;CurrentDriver.c: 43:     {
+[e = . . _ADCON0bits 1 3 -> -> 0 `i `uc ]
+"44
+[; ;CurrentDriver.c: 44:        __asm__ __volatile__ ("nop");
+[e = . . _ADCON0bits 1 4 -> -> 1 `i `uc ]
+"45
+[; ;CurrentDriver.c: 45:     }
+[e = . . _ADCON0bits 0 5 -> -> 0 `i `uc ]
+"46
+[; ;CurrentDriver.c: 46: 
+[e = . . _ADCON0bits 0 4 -> -> 0 `i `uc ]
+"47
+[; ;CurrentDriver.c: 47:     ADCON0bits.GO_nDONE = 1;
+[e = . . _ADCON1bits 0 1 -> -> 1 `i `uc ]
+"48
+[; ;CurrentDriver.c: 48:     __asm__ __volatile__ ("nop");
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
+"50
+[; ;CurrentDriver.c: 50: 
+[e = _ANSEL -> -> 0 `i `uc ]
+"51
+[; ;CurrentDriver.c: 51:     for(i=0; i< NB_Wait;i++)
+[e = . . _ANSELbits 0 4 -> -> 1 `i `uc ]
+"53
+[; ;CurrentDriver.c: 53:        __asm__ __volatile__ ("nop");
+[e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
+"54
+[; ;CurrentDriver.c: 54:     }
+[e = . . _INTCONbits 0 6 -> -> 0 `i `uc ]
+"55
+[; ;CurrentDriver.c: 55:     while(ADCON0bits.GO_nDONE == 1)
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"57
+[; ;CurrentDriver.c: 57:     if(ADRESH > wVref)
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $ < -> _i `l -> 65500 `l 67  ]
+[e $U 68  ]
+[e :U 67 ]
+"58
+[; ;CurrentDriver.c: 58:     {
+{
+"59
+[; ;CurrentDriver.c: 59:         NB_Wait--;
+[; <" nop ;# ">
+"60
+[; ;CurrentDriver.c: 60:         if(NB_Wait == -1)
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < -> _i `l -> 65500 `l 67  ]
+[e :U 68 ]
+}
+"62
+[; ;CurrentDriver.c: 62:             ErrorCode= 1;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"64
+[; ;CurrentDriver.c: 64:         }
+[e :U 71 ]
+"65
+[; ;CurrentDriver.c: 65:     }
+{
+"66
+[; ;CurrentDriver.c: 66:     else
+[e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
+"68
+[; ;CurrentDriver.c: 68:         NB_Wait++;
+{
+[e = _i -> 0 `i ]
+[e $U 76  ]
+[e :U 73 ]
+"69
+[; ;CurrentDriver.c: 69:         if( NB_Wait == 255)
+{
+"70
+[; ;CurrentDriver.c: 70:         {
+[; <" nop ;# ">
+"71
+[; ;CurrentDriver.c: 71:            ErrorCode=2;
+}
+[e ++ _i -> 1 `i ]
+[e :U 76 ]
+[e $ < _i _NB_Wait 73  ]
+[e :U 74 ]
+}
+"73
+[; ;CurrentDriver.c: 73:         }
+[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
+"74
+[; ;CurrentDriver.c: 74:     }
+[; <" nop ;# ">
+"75
+[; ;CurrentDriver.c: 75:  }
+[e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
+"77
+[; ;CurrentDriver.c: 77:  PORTCbits.RC5 = 0;
+{
+[e = _i -> 0 `i ]
+[e $U 80  ]
+[e :U 77 ]
+"78
+[; ;CurrentDriver.c: 78: 
+{
+"79
+[; ;CurrentDriver.c: 79: while(ErrorCode != 0)
+[; <" nop ;# ">
+"80
+[; ;CurrentDriver.c: 80: {
+}
+[e ++ _i -> 1 `i ]
+[e :U 80 ]
+[e $ < _i _NB_Wait 77  ]
+[e :U 78 ]
+}
+"81
+[; ;CurrentDriver.c: 81:     switch(ErrorCode)
+[e $U 81  ]
+[e :U 82 ]
+"82
+[; ;CurrentDriver.c: 82:     {
+{
+}
+[e :U 81 ]
+"81
+[; ;CurrentDriver.c: 81:     switch(ErrorCode)
+[e $ == -> . . _ADCON0bits 0 1 `i -> 1 `i 82  ]
+[e :U 83 ]
+"83
+[; ;CurrentDriver.c: 83:         case 1:
+[e $ ! > -> _ADRESH `i -> _wVref `i 84  ]
+"84
+[; ;CurrentDriver.c: 84:             for(uint16_t i=0; i< 65000;i++)
+{
+"85
+[; ;CurrentDriver.c: 85:             {
+[e -- _NB_Wait -> 1 `i ]
+"86
+[; ;CurrentDriver.c: 86:                __asm__ __volatile__ ("nop");
+[e $ ! == _NB_Wait -U -> 1 `i 85  ]
+"87
+[; ;CurrentDriver.c: 87:             }
+{
+"88
+[; ;CurrentDriver.c: 88:             PORTCbits.RC4 = 1;
+[e = _ErrorCode -> -> 1 `i `uc ]
+"89
+[; ;CurrentDriver.c: 89:             for(uint16_t i=0; i< 65000;i++)
+[e $U 72  ]
+"90
+[; ;CurrentDriver.c: 90:             {
+}
+[e :U 85 ]
+"91
+[; ;CurrentDriver.c: 91:                __asm__ __volatile__ ("nop");
+}
+[e $U 86  ]
+"92
+[; ;CurrentDriver.c: 92:             }
+[e :U 84 ]
+"93
+[; ;CurrentDriver.c: 93:             PORTCbits.RC4 = 0;
+{
+"94
+[; ;CurrentDriver.c: 94:             break;
+[e ++ _NB_Wait -> 1 `i ]
+"95
+[; ;CurrentDriver.c: 95:         case 2:
+[e $ ! == _NB_Wait -> 255 `i 87  ]
+"96
+[; ;CurrentDriver.c: 96:             PORTCbits.RC4 = 1;
+{
+"97
+[; ;CurrentDriver.c: 97:             break;
+[e = _ErrorCode -> -> 2 `i `uc ]
+"98
+[; ;CurrentDriver.c: 98:         default:
+[e $U 72  ]
+"99
+[; ;CurrentDriver.c: 99:             break;
+}
+[e :U 87 ]
+"100
+[; ;CurrentDriver.c: 100: 
+}
+[e :U 86 ]
+"101
+[; ;CurrentDriver.c: 101:     }
+}
+[e :U 70 ]
+[e $U 71  ]
+[e :U 72 ]
+"103
+[; ;CurrentDriver.c: 103: }
+[e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
+"105
+[; ;CurrentDriver.c: 105:     return;
+[e $U 88  ]
+[e :U 89 ]
+"106
+[; ;CurrentDriver.c: 106: }
+{
+"107
+[; ;CurrentDriver.c: 107: 
+[e $U 92  ]
+"108
+[; ;CurrentDriver.c: 108: void __attribute__((picinterrupt(""))) myint(void)
+{
+"109
+[; ;CurrentDriver.c: 109: {
+[e :U 93 ]
+"110
+[; ;CurrentDriver.c: 110: 
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $ < -> _i `l -> 65000 `l 94  ]
+[e $U 95  ]
+[e :U 94 ]
+"111
+[; ;CurrentDriver.c: 111: }
+{
+"112
+[; <" nop ;# ">
+"113
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < -> _i `l -> 65000 `l 94  ]
+[e :U 95 ]
+}
+"114
+[e = . . _PORTCbits 0 4 -> -> 1 `i `uc ]
+"115
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $ < -> _i `l -> 65000 `l 97  ]
+[e $U 98  ]
+[e :U 97 ]
+"116
+{
+"117
+[; <" nop ;# ">
+"118
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < -> _i `l -> 65000 `l 97  ]
+[e :U 98 ]
+}
+"119
+[e = . . _PORTCbits 0 4 -> -> 0 `i `uc ]
+"120
+[e $U 91  ]
+"121
+[e :U 100 ]
+"122
+[e = . . _PORTCbits 0 4 -> -> 1 `i `uc ]
+"123
+[e $U 91  ]
+"124
+[e :U 101 ]
+"125
+[e $U 91  ]
+"127
+}
+[e $U 91  ]
+[e :U 92 ]
+[e [\ -> _ErrorCode `i , $ -> 1 `i 93
+ , $ -> 2 `i 100
+ 101 ]
+[e :U 91 ]
+"129
+}
+[e :U 88 ]
+"105
+[; ;CurrentDriver.c: 105:     return;
+[e $ != -> _ErrorCode `i -> 0 `i 89  ]
+[e :U 90 ]
+"131
+[e $UE 66  ]
+"132
+[e :UE 66 ]
+}
+[v $root$_myint `(v ~T0 @X0 0 e ]
+"134
+[v _myint `(v ~T1 @X0 1 ef ]
+"135
+{
+[e :U _myint ]
+[f ]
+"137
+[e :UE 102 ]
+}
