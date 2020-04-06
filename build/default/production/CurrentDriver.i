@@ -1183,7 +1183,7 @@ void main(void)
     int16_t NB_Wait=0;
     INTCONbits.GIE = 0;
 
-
+    ANSEL = 0x00;
 
     PORTC = 0x00;
     TRISC = 0xFF;
@@ -1197,9 +1197,30 @@ void main(void)
     ADCON1bits.ADCS = 1;
     ADCON0bits.ADON = 1;
 
-    ANSEL = 0x00;
     ANSELbits.ANS4 = 1;
 
+
+    PORTA = 0x00;
+    TRISA = 0xFF;
+    ANSELbits.ANS1 = 1;
+
+
+    CMCON=0;
+    CMCONbits.CINV=0;
+    CMCONbits.CM0 = 0;
+    CMCONbits.CM1 = 0;
+    CMCONbits.CM2 = 1;
+
+    VRCONbits.VR0 = 0;
+    VRCONbits.VR1 = 0;
+    VRCONbits.VR2 = 0;
+    VRCONbits.VR3 = 0;
+    VRCONbits.VRR = 0;
+    VRCONbits.VR = 1;
+
+
+
+    PIE1bits.CMIE =1;
     PIE1bits.ADIE = 0;
     INTCONbits.PEIE = 0;
     INTCONbits.GIE = 0;
@@ -1209,11 +1230,11 @@ void main(void)
        __asm__ __volatile__ ("nop");
     }
 
-    int16_t i=0;
+    int16_t i=0,wDebounceCycle=0;
 
  while(1)
  {
-    PORTCbits.RC5 = 1;
+
 
     for(i=0; i< NB_Wait;i++)
     {
@@ -1222,7 +1243,7 @@ void main(void)
 
     ADCON0bits.GO_nDONE = 1;
     __asm__ __volatile__ ("nop");
-    PORTCbits.RC5 = 0;
+
 
     for(i=0; i< NB_Wait;i++)
     {
@@ -1250,7 +1271,7 @@ void main(void)
     }
  }
 
- PORTCbits.RC5 = 0;
+
 
 while(ErrorCode != 0)
 {
@@ -1284,4 +1305,16 @@ while(ErrorCode != 0)
 void __attribute__((picinterrupt(""))) myint(void)
 {
 
+    if(PIR1bits.CMIF == 1)
+    {
+        if(CMCONbits.COUT == 1)
+        {
+            PORTCbits.RC5 = 0;
+        }
+        else
+        {
+            PORTCbits.RC5 = 1;
+        }
+        PIR1bits.CMIF = 0;
+    }
 }

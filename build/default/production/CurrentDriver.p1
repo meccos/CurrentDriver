@@ -15,6 +15,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "309
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 309: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS11 ~T0 @X0 0 e@11 ]
+"973
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 973: extern volatile unsigned char ANSEL __attribute__((address(0x091)));
+[v _ANSEL `Vuc ~T0 @X0 0 e@145 ]
 "216
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 216: extern volatile unsigned char PORTC __attribute__((address(0x007)));
 [v _PORTC `Vuc ~T0 @X0 0 e@7 ]
@@ -70,9 +73,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1395
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1395: extern volatile ADCON1bits_t ADCON1bits __attribute__((address(0x09F)));
 [v _ADCON1bits `VS63 ~T0 @X0 0 e@159 ]
-"973
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 973: extern volatile unsigned char ANSEL __attribute__((address(0x091)));
-[v _ANSEL `Vuc ~T0 @X0 0 e@145 ]
 "979
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 979:     struct {
 [s S45 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -84,6 +84,45 @@ Version 4.0 HI-TECH Software Intermediate Code
 "990
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 990: extern volatile ANSELbits_t ANSELbits __attribute__((address(0x091)));
 [v _ANSELbits `VS44 ~T0 @X0 0 e@145 ]
+"166
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+"731
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 731: extern volatile unsigned char TRISA __attribute__((address(0x085)));
+[v _TRISA `Vuc ~T0 @X0 0 e@133 ]
+"498
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 498: extern volatile unsigned char CMCON __attribute__((address(0x019)));
+[v _CMCON `Vuc ~T0 @X0 0 e@25 ]
+"504
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 504:     struct {
+[s S21 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S21 . CM CIS CINV . COUT ]
+"511
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 511:     struct {
+[s S22 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S22 . CM0 CM1 CM2 ]
+"503
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 503: typedef union {
+[u S20 `S21 1 `S22 1 ]
+[n S20 . . . ]
+"517
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 517: extern volatile CMCONbits_t CMCONbits __attribute__((address(0x019)));
+[v _CMCONbits `VS20 ~T0 @X0 0 e@25 ]
+"1227
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1227:     struct {
+[s S55 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S55 . VR . VRR . VREN ]
+"1234
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1234:     struct {
+[s S56 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S56 . VR0 VR1 VR2 VR3 ]
+"1226
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1226: typedef union {
+[u S54 `S55 1 `S56 1 ]
+[n S54 . . . ]
+"1241
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1241: extern volatile VRCONbits_t VRCONbits __attribute__((address(0x099)));
+[v _VRCONbits `VS54 ~T0 @X0 0 e@153 ]
 "837
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 837:     struct {
 [s S36 :1 `uc 1 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -99,6 +138,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "849
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 849: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x08C)));
 [v _PIE1bits `VS35 ~T0 @X0 0 e@140 ]
+"557
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 557: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
 "222
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 222:     struct {
 [s S8 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -110,11 +152,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "231
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 231: extern volatile PORTCbits_t PORTCbits __attribute__((address(0x007)));
 [v _PORTCbits `VS7 ~T0 @X0 0 e@7 ]
-"557
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 557: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
-[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
 [t ~ __interrupt . k ]
 [t T1 __interrupt ]
+"370
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 370:     struct {
+[s S15 :1 `uc 1 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S15 . TMR1IF . CMIF . ADIF EEIF ]
+"378
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 378:     struct {
+[s S16 :1 `uc 1 ]
+[n S16 . T1IF ]
+"369
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 369: typedef union {
+[u S14 `S15 1 `S16 1 ]
+[n S14 . . . ]
+"382
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 382: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x00C)));
+[v _PIR1bits `VS14 ~T0 @X0 0 e@12 ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -224,7 +278,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f676.h: 1380: __asm("ADCON1 equ 09Fh");
 [; <" ADCON1 equ 09Fh ;# ">
 "24 CurrentDriver.c
-[; ;CurrentDriver.c: 24:     ANSEL = 0x00;
+[; ;CurrentDriver.c: 24:     ANSELbits.ANS4 = 1;
 [p x FOSC = 0x5  WDTE = 0x0  PWRTE = 0x1  MCLRE = 0x0  BOREN = 0x0  CP = 0x1  CPD = 0x1 ]
 "26
 [; ;CurrentDriver.c: 26: 
@@ -233,14 +287,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ]
 "27
-[; ;CurrentDriver.c: 27:     PIE1bits.ADIE = 0;
+[; ;CurrentDriver.c: 27:     PORTA = 0x00;
 [v _wVref `uc ~T0 @X0 1 e ]
 [i _wVref
 -> -> 15 `i `uc
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "29
-[; ;CurrentDriver.c: 29:     INTCONbits.GIE = 0;
+[; ;CurrentDriver.c: 29:     ANSELbits.ANS1 = 1;
 [v _main `(v ~T0 @X0 1 ef ]
 "30
 [; ;CurrentDriver.c: 30: 
@@ -248,296 +302,346 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _main ]
 [f ]
 "31
-[; ;CurrentDriver.c: 31:     for(uint16_t i=0; i< 65500;i++)
+[; ;CurrentDriver.c: 31: 
 [v _ErrorCode `uc ~T0 @X0 1 a ]
 [e = _ErrorCode -> -> 0 `i `uc ]
 "33
-[; ;CurrentDriver.c: 33:        __asm__ __volatile__ ("nop");
+[; ;CurrentDriver.c: 33:     CMCONbits.CINV=0;
 [v _NB_Wait `i ~T0 @X0 1 a ]
 [e = _NB_Wait -> 0 `i ]
 "34
-[; ;CurrentDriver.c: 34:     }
+[; ;CurrentDriver.c: 34:     CMCONbits.CM0 = 0;
 [e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"36
+[; ;CurrentDriver.c: 36:     CMCONbits.CM2 = 1;
+[e = _ANSEL -> -> 0 `i `uc ]
 "38
-[; ;CurrentDriver.c: 38:  while(1)
+[; ;CurrentDriver.c: 38:     VRCONbits.VR0 = 0;
 [e = _PORTC -> -> 0 `i `uc ]
 "39
-[; ;CurrentDriver.c: 39:  {
+[; ;CurrentDriver.c: 39:     VRCONbits.VR1 = 0;
 [e = _TRISC -> -> 255 `i `uc ]
 "40
-[; ;CurrentDriver.c: 40:     PORTCbits.RC5 = 1;
+[; ;CurrentDriver.c: 40:     VRCONbits.VR2 = 0;
 [e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
 "41
-[; ;CurrentDriver.c: 41: 
+[; ;CurrentDriver.c: 41:     VRCONbits.VR3 = 0;
 [e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
 "42
-[; ;CurrentDriver.c: 42:     for(i=0; i< NB_Wait;i++)
+[; ;CurrentDriver.c: 42:     VRCONbits.VRR = 0;
 [e = . . _ADCON0bits 1 2 -> -> 0 `i `uc ]
 "43
-[; ;CurrentDriver.c: 43:     {
+[; ;CurrentDriver.c: 43:     VRCONbits.VR = 1;
 [e = . . _ADCON0bits 1 3 -> -> 0 `i `uc ]
 "44
-[; ;CurrentDriver.c: 44:        __asm__ __volatile__ ("nop");
+[; ;CurrentDriver.c: 44: 
 [e = . . _ADCON0bits 1 4 -> -> 1 `i `uc ]
 "45
-[; ;CurrentDriver.c: 45:     }
+[; ;CurrentDriver.c: 45: 
 [e = . . _ADCON0bits 0 5 -> -> 0 `i `uc ]
 "46
 [; ;CurrentDriver.c: 46: 
 [e = . . _ADCON0bits 0 4 -> -> 0 `i `uc ]
 "47
-[; ;CurrentDriver.c: 47:     ADCON0bits.GO_nDONE = 1;
+[; ;CurrentDriver.c: 47:     PIE1bits.CMIE =1;
 [e = . . _ADCON1bits 0 1 -> -> 1 `i `uc ]
 "48
-[; ;CurrentDriver.c: 48:     __asm__ __volatile__ ("nop");
+[; ;CurrentDriver.c: 48:     PIE1bits.ADIE = 0;
 [e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
 "50
-[; ;CurrentDriver.c: 50: 
-[e = _ANSEL -> -> 0 `i `uc ]
-"51
-[; ;CurrentDriver.c: 51:     for(i=0; i< NB_Wait;i++)
+[; ;CurrentDriver.c: 50:     INTCONbits.GIE = 0;
 [e = . . _ANSELbits 0 4 -> -> 1 `i `uc ]
 "53
-[; ;CurrentDriver.c: 53:        __asm__ __volatile__ ("nop");
-[e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
+[; ;CurrentDriver.c: 53:     {
+[e = _PORTA -> -> 0 `i `uc ]
 "54
-[; ;CurrentDriver.c: 54:     }
-[e = . . _INTCONbits 0 6 -> -> 0 `i `uc ]
+[; ;CurrentDriver.c: 54:        __asm__ __volatile__ ("nop");
+[e = _TRISA -> -> 255 `i `uc ]
 "55
-[; ;CurrentDriver.c: 55:     while(ADCON0bits.GO_nDONE == 1)
+[; ;CurrentDriver.c: 55:     }
+[e = . . _ANSELbits 0 1 -> -> 1 `i `uc ]
+"58
+[; ;CurrentDriver.c: 58: 
+[e = _CMCON -> -> 0 `i `uc ]
+"59
+[; ;CurrentDriver.c: 59:  while(1)
+[e = . . _CMCONbits 0 2 -> -> 0 `i `uc ]
+"60
+[; ;CurrentDriver.c: 60:  {
+[e = . . _CMCONbits 1 0 -> -> 0 `i `uc ]
+"61
+[; ;CurrentDriver.c: 61: 
+[e = . . _CMCONbits 1 1 -> -> 0 `i `uc ]
+"62
+[; ;CurrentDriver.c: 62: 
+[e = . . _CMCONbits 1 2 -> -> 1 `i `uc ]
+"64
+[; ;CurrentDriver.c: 64:     {
+[e = . . _VRCONbits 1 0 -> -> 0 `i `uc ]
+"65
+[; ;CurrentDriver.c: 65:        __asm__ __volatile__ ("nop");
+[e = . . _VRCONbits 1 1 -> -> 0 `i `uc ]
+"66
+[; ;CurrentDriver.c: 66:     }
+[e = . . _VRCONbits 1 2 -> -> 0 `i `uc ]
+"67
+[; ;CurrentDriver.c: 67: 
+[e = . . _VRCONbits 1 3 -> -> 0 `i `uc ]
+"68
+[; ;CurrentDriver.c: 68:     ADCON0bits.GO_nDONE = 1;
+[e = . . _VRCONbits 0 2 -> -> 0 `i `uc ]
+"69
+[; ;CurrentDriver.c: 69:     __asm__ __volatile__ ("nop");
+[e = . . _VRCONbits 0 0 -> -> 1 `i `uc ]
+"73
+[; ;CurrentDriver.c: 73:     {
+[e = . . _PIE1bits 0 2 -> -> 1 `i `uc ]
+"74
+[; ;CurrentDriver.c: 74:        __asm__ __volatile__ ("nop");
+[e = . . _PIE1bits 0 4 -> -> 0 `i `uc ]
+"75
+[; ;CurrentDriver.c: 75:     }
+[e = . . _INTCONbits 0 6 -> -> 0 `i `uc ]
+"76
+[; ;CurrentDriver.c: 76:     while(ADCON0bits.GO_nDONE == 1)
 [e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
-"57
-[; ;CurrentDriver.c: 57:     if(ADRESH > wVref)
+"78
+[; ;CurrentDriver.c: 78:     if(ADRESH > wVref)
 {
 [v _i `ui ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `ui ]
 [e $ < -> _i `l -> 65500 `l 67  ]
 [e $U 68  ]
 [e :U 67 ]
-"58
-[; ;CurrentDriver.c: 58:     {
+"79
+[; ;CurrentDriver.c: 79:     {
 {
-"59
-[; ;CurrentDriver.c: 59:         NB_Wait--;
+"80
+[; ;CurrentDriver.c: 80:         NB_Wait--;
 [; <" nop ;# ">
-"60
-[; ;CurrentDriver.c: 60:         if(NB_Wait == -1)
+"81
+[; ;CurrentDriver.c: 81:         if(NB_Wait == -1)
 }
 [e ++ _i -> -> 1 `i `ui ]
 [e $ < -> _i `l -> 65500 `l 67  ]
 [e :U 68 ]
 }
-"62
-[; ;CurrentDriver.c: 62:             ErrorCode= 1;
+"83
+[; ;CurrentDriver.c: 83:             ErrorCode= 1;
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-"64
-[; ;CurrentDriver.c: 64:         }
+[v _wDebounceCycle `i ~T0 @X0 1 a ]
+[e = _wDebounceCycle -> 0 `i ]
+"85
+[; ;CurrentDriver.c: 85:         }
 [e :U 71 ]
-"65
-[; ;CurrentDriver.c: 65:     }
+"86
+[; ;CurrentDriver.c: 86:     }
 {
-"66
-[; ;CurrentDriver.c: 66:     else
-[e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
-"68
-[; ;CurrentDriver.c: 68:         NB_Wait++;
+"89
+[; ;CurrentDriver.c: 89:         NB_Wait++;
 {
 [e = _i -> 0 `i ]
 [e $U 76  ]
 [e :U 73 ]
-"69
-[; ;CurrentDriver.c: 69:         if( NB_Wait == 255)
+"90
+[; ;CurrentDriver.c: 90:         if( NB_Wait == 255)
 {
-"70
-[; ;CurrentDriver.c: 70:         {
+"91
+[; ;CurrentDriver.c: 91:         {
 [; <" nop ;# ">
-"71
-[; ;CurrentDriver.c: 71:            ErrorCode=2;
+"92
+[; ;CurrentDriver.c: 92:            ErrorCode=2;
 }
 [e ++ _i -> 1 `i ]
 [e :U 76 ]
 [e $ < _i _NB_Wait 73  ]
 [e :U 74 ]
 }
-"73
-[; ;CurrentDriver.c: 73:         }
+"94
+[; ;CurrentDriver.c: 94:         }
 [e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
-"74
-[; ;CurrentDriver.c: 74:     }
+"95
+[; ;CurrentDriver.c: 95:     }
 [; <" nop ;# ">
-"75
-[; ;CurrentDriver.c: 75:  }
-[e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
-"77
-[; ;CurrentDriver.c: 77:  PORTCbits.RC5 = 0;
+"98
+[; ;CurrentDriver.c: 98: 
 {
 [e = _i -> 0 `i ]
 [e $U 80  ]
 [e :U 77 ]
-"78
-[; ;CurrentDriver.c: 78: 
+"99
+[; ;CurrentDriver.c: 99: 
 {
-"79
-[; ;CurrentDriver.c: 79: while(ErrorCode != 0)
+"100
+[; ;CurrentDriver.c: 100: while(ErrorCode != 0)
 [; <" nop ;# ">
-"80
-[; ;CurrentDriver.c: 80: {
+"101
+[; ;CurrentDriver.c: 101: {
 }
 [e ++ _i -> 1 `i ]
 [e :U 80 ]
 [e $ < _i _NB_Wait 77  ]
 [e :U 78 ]
 }
-"81
-[; ;CurrentDriver.c: 81:     switch(ErrorCode)
+"102
+[; ;CurrentDriver.c: 102:     switch(ErrorCode)
 [e $U 81  ]
 [e :U 82 ]
-"82
-[; ;CurrentDriver.c: 82:     {
+"103
+[; ;CurrentDriver.c: 103:     {
 {
 }
 [e :U 81 ]
-"81
-[; ;CurrentDriver.c: 81:     switch(ErrorCode)
+"102
+[; ;CurrentDriver.c: 102:     switch(ErrorCode)
 [e $ == -> . . _ADCON0bits 0 1 `i -> 1 `i 82  ]
 [e :U 83 ]
-"83
-[; ;CurrentDriver.c: 83:         case 1:
+"104
+[; ;CurrentDriver.c: 104:         case 1:
 [e $ ! > -> _ADRESH `i -> _wVref `i 84  ]
-"84
-[; ;CurrentDriver.c: 84:             for(uint16_t i=0; i< 65000;i++)
+"105
+[; ;CurrentDriver.c: 105:             for(uint16_t i=0; i< 65000;i++)
 {
-"85
-[; ;CurrentDriver.c: 85:             {
+"106
+[; ;CurrentDriver.c: 106:             {
 [e -- _NB_Wait -> 1 `i ]
-"86
-[; ;CurrentDriver.c: 86:                __asm__ __volatile__ ("nop");
+"107
+[; ;CurrentDriver.c: 107:                __asm__ __volatile__ ("nop");
 [e $ ! == _NB_Wait -U -> 1 `i 85  ]
-"87
-[; ;CurrentDriver.c: 87:             }
+"108
+[; ;CurrentDriver.c: 108:             }
 {
-"88
-[; ;CurrentDriver.c: 88:             PORTCbits.RC4 = 1;
+"109
+[; ;CurrentDriver.c: 109:             PORTCbits.RC4 = 1;
 [e = _ErrorCode -> -> 1 `i `uc ]
-"89
-[; ;CurrentDriver.c: 89:             for(uint16_t i=0; i< 65000;i++)
+"110
+[; ;CurrentDriver.c: 110:             for(uint16_t i=0; i< 65000;i++)
 [e $U 72  ]
-"90
-[; ;CurrentDriver.c: 90:             {
+"111
+[; ;CurrentDriver.c: 111:             {
 }
 [e :U 85 ]
-"91
-[; ;CurrentDriver.c: 91:                __asm__ __volatile__ ("nop");
+"112
+[; ;CurrentDriver.c: 112:                __asm__ __volatile__ ("nop");
 }
 [e $U 86  ]
-"92
-[; ;CurrentDriver.c: 92:             }
+"113
+[; ;CurrentDriver.c: 113:             }
 [e :U 84 ]
-"93
-[; ;CurrentDriver.c: 93:             PORTCbits.RC4 = 0;
+"114
+[; ;CurrentDriver.c: 114:             PORTCbits.RC4 = 0;
 {
-"94
-[; ;CurrentDriver.c: 94:             break;
+"115
+[; ;CurrentDriver.c: 115:             break;
 [e ++ _NB_Wait -> 1 `i ]
-"95
-[; ;CurrentDriver.c: 95:         case 2:
+"116
+[; ;CurrentDriver.c: 116:         case 2:
 [e $ ! == _NB_Wait -> 255 `i 87  ]
-"96
-[; ;CurrentDriver.c: 96:             PORTCbits.RC4 = 1;
+"117
+[; ;CurrentDriver.c: 117:             PORTCbits.RC4 = 1;
 {
-"97
-[; ;CurrentDriver.c: 97:             break;
+"118
+[; ;CurrentDriver.c: 118:             break;
 [e = _ErrorCode -> -> 2 `i `uc ]
-"98
-[; ;CurrentDriver.c: 98:         default:
+"119
+[; ;CurrentDriver.c: 119:         default:
 [e $U 72  ]
-"99
-[; ;CurrentDriver.c: 99:             break;
+"120
+[; ;CurrentDriver.c: 120:             break;
 }
 [e :U 87 ]
-"100
-[; ;CurrentDriver.c: 100: 
+"121
+[; ;CurrentDriver.c: 121: 
 }
 [e :U 86 ]
-"101
-[; ;CurrentDriver.c: 101:     }
+"122
+[; ;CurrentDriver.c: 122:     }
 }
 [e :U 70 ]
 [e $U 71  ]
 [e :U 72 ]
-"103
-[; ;CurrentDriver.c: 103: }
-[e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
-"105
-[; ;CurrentDriver.c: 105:     return;
+"126
+[; ;CurrentDriver.c: 126:     return;
 [e $U 88  ]
 [e :U 89 ]
-"106
-[; ;CurrentDriver.c: 106: }
+"127
+[; ;CurrentDriver.c: 127: }
 {
-"107
-[; ;CurrentDriver.c: 107: 
+"128
+[; ;CurrentDriver.c: 128: 
 [e $U 92  ]
-"108
-[; ;CurrentDriver.c: 108: void __attribute__((picinterrupt(""))) myint(void)
+"129
+[; ;CurrentDriver.c: 129: void __attribute__((picinterrupt(""))) myint(void)
 {
-"109
-[; ;CurrentDriver.c: 109: {
+"130
+[; ;CurrentDriver.c: 130: {
 [e :U 93 ]
-"110
-[; ;CurrentDriver.c: 110: 
+"131
+[; ;CurrentDriver.c: 131: 
 {
 [v _i `ui ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `ui ]
 [e $ < -> _i `l -> 65000 `l 94  ]
 [e $U 95  ]
 [e :U 94 ]
-"111
-[; ;CurrentDriver.c: 111: }
+"132
+[; ;CurrentDriver.c: 132:     if(PIR1bits.CMIF == 1)
 {
-"112
+"133
+[; ;CurrentDriver.c: 133:     {
 [; <" nop ;# ">
-"113
+"134
+[; ;CurrentDriver.c: 134:         if(CMCONbits.COUT == 1)
 }
 [e ++ _i -> -> 1 `i `ui ]
 [e $ < -> _i `l -> 65000 `l 94  ]
 [e :U 95 ]
 }
-"114
+"135
+[; ;CurrentDriver.c: 135:         {
 [e = . . _PORTCbits 0 4 -> -> 1 `i `uc ]
-"115
+"136
+[; ;CurrentDriver.c: 136:             PORTCbits.RC5 = 0;
 {
 [v _i `ui ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `ui ]
 [e $ < -> _i `l -> 65000 `l 97  ]
 [e $U 98  ]
 [e :U 97 ]
-"116
+"137
+[; ;CurrentDriver.c: 137:         }
 {
-"117
+"138
+[; ;CurrentDriver.c: 138:         else
 [; <" nop ;# ">
-"118
+"139
+[; ;CurrentDriver.c: 139:         {
 }
 [e ++ _i -> -> 1 `i `ui ]
 [e $ < -> _i `l -> 65000 `l 97  ]
 [e :U 98 ]
 }
-"119
+"140
+[; ;CurrentDriver.c: 140:             PORTCbits.RC5 = 1;
 [e = . . _PORTCbits 0 4 -> -> 0 `i `uc ]
-"120
+"141
+[; ;CurrentDriver.c: 141:         }
 [e $U 91  ]
-"121
+"142
+[; ;CurrentDriver.c: 142:         PIR1bits.CMIF = 0;
 [e :U 100 ]
-"122
+"143
+[; ;CurrentDriver.c: 143:     }
 [e = . . _PORTCbits 0 4 -> -> 1 `i `uc ]
-"123
+"144
+[; ;CurrentDriver.c: 144: }
 [e $U 91  ]
-"124
+"145
 [e :U 101 ]
-"125
+"146
 [e $U 91  ]
-"127
+"148
 }
 [e $U 91  ]
 [e :U 92 ]
@@ -545,25 +649,52 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 2 `i 100
  101 ]
 [e :U 91 ]
-"129
+"150
 }
 [e :U 88 ]
-"105
-[; ;CurrentDriver.c: 105:     return;
+"126
+[; ;CurrentDriver.c: 126:     return;
 [e $ != -> _ErrorCode `i -> 0 `i 89  ]
 [e :U 90 ]
-"131
+"152
 [e $UE 66  ]
-"132
+"153
 [e :UE 66 ]
 }
 [v $root$_myint `(v ~T0 @X0 0 e ]
-"134
+"155
 [v _myint `(v ~T1 @X0 1 ef ]
-"135
+"156
 {
 [e :U _myint ]
 [f ]
-"137
+"158
+[e $ ! == -> . . _PIR1bits 0 2 `i -> 1 `i 103  ]
+"159
+{
+"160
+[e $ ! == -> . . _CMCONbits 0 4 `i -> 1 `i 104  ]
+"161
+{
+"162
+[e = . . _PORTCbits 0 5 -> -> 0 `i `uc ]
+"163
+}
+[e $U 105  ]
+"164
+[e :U 104 ]
+"165
+{
+"166
+[e = . . _PORTCbits 0 5 -> -> 1 `i `uc ]
+"167
+}
+[e :U 105 ]
+"168
+[e = . . _PIR1bits 0 2 -> -> 0 `i `uc ]
+"169
+}
+[e :U 103 ]
+"170
 [e :UE 102 ]
 }

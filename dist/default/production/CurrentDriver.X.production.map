@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.00\pic\dat\en_msgs.txt \
   -cs -h+dist/default/production\CurrentDriver.X.production.sym \
   --cmf=dist/default/production\CurrentDriver.X.production.cmf -z -Q16F676 \
-  -oC:\Users\dell\AppData\Local\Temp\shc4.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\dell\AppData\Local\Temp\s9ig.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/CurrentDriver.X.production.map -E1 -ver=XC8 \
-  --acfsm=1493 -ASTACK=031h-05dh -pstack=STACK -ACODE=00h-03FEh \
+  --acfsm=1493 -ASTACK=033h-05dh -pstack=STACK -ACODE=00h-03FEh \
   -ASTRCODE=00h-03FEh -ASTRING=00h-0FFhx3,0300h-03FEh \
   -ACONST=00h-0FFhx3,0300h-03FEh -AENTRY=00h-0FFhx3,0300h-03FEh \
   -ABANK0=020h-05Dh -ARAM=020h-05Dh -AABS1=020h-05Fh -ACOMMON=05Eh-05Fh \
@@ -16,7 +16,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-07Fh/02100h \
   -peeprom_data=EEDATA -DEEDATA=2 -posccal=03FFh -DCODE=2 -DSTRCODE=2 \
-  -DSTRING=2 -DCONST=2 -DENTRY=2 -k C:\Users\dell\AppData\Local\Temp\shc4.o \
+  -DSTRING=2 -DCONST=2 -DENTRY=2 -k C:\Users\dell\AppData\Local\Temp\s9ig.o \
   dist/default/production\CurrentDriver.X.production.o 
 
 Object code version is 3.11
@@ -26,19 +26,19 @@ Machine type is 16F676
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\dell\AppData\Local\Temp\shc4.o
+C:\Users\dell\AppData\Local\Temp\s9ig.o
                 end_init                              B        B        1        8       0
                 reset_vec                             0        0        1        0       0
                 config                             2007     2007        1     400E       0
 dist/default/production\CurrentDriver.X.production.o
                 cinit                                 C        C        5        8       0
                 intentry                              4        4        7        8       0
-                text1                               11C      11C        7        8       0
-                maintext                             11       11      10B        8       0
-                cstackBANK0                          20       20        F       20       1
-                dataBANK0                            30       30        1       20       1
-                bssBANK0                             2F       2F        1       20       1
-                idataBANK0                          123      123        1        8       0
+                text1                               133      133       14        8       0
+                maintext                             11       11      122        8       0
+                cstackBANK0                          20       20       11       20       1
+                dataBANK0                            32       32        1       20       1
+                bssBANK0                             31       31        1       20       1
+                idataBANK0                          147      147        1        8       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -48,9 +48,9 @@ TOTAL           Name                               Link     Load   Length     Sp
                 cinit                                 C        C        5         0
                 intentry                              4        4        7         0
                 reset_vec                             0        0        1         0
-                text1                               11C      11C        7         0
-                maintext                             11       11      10B         0
-                idataBANK0                          123      123        1         0
+                text1                               133      133       14         0
+                maintext                             11       11      122         0
+                idataBANK0                          147      147        1         0
 
         CLASS   STRCODE        
 
@@ -61,9 +61,9 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   ENTRY          
 
         CLASS   BANK0          
-                cstackBANK0                          20       20        F         1
-                dataBANK0                            30       30        1         1
-                bssBANK0                             2F       2F        1         1
+                cstackBANK0                          20       20       11         1
+                dataBANK0                            32       32        1         1
+                bssBANK0                             31       31        1         1
 
         CLASS   RAM            
 
@@ -90,31 +90,31 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000001  000001         0       0  CODE        2
-                intentry                       000004  000120  000124         8       0  CODE        2
-                cstackBANK0                    000020  000011  000031        20       1  BANK0       1
+                intentry                       000004  000144  000148         8       0  CODE        2
+                cstackBANK0                    000020  000013  000033        20       1  BANK0       1
                 config                         002007  000001  002008      400E       0  CONFIG      2
 
 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            0031-005D             2D           1
+        BANK0            0033-005D             2B           1
         CODE             0001-0003              3           2
-                         0124-03FE            2DB
+                         0148-03FE            2B7
         CONST            0001-0003              3           2
-                         0124-03FE            100
+                         0148-03FE            100
         EEDATA           2100-217F             80           2
         ENTRY            0001-0003              3           2
-                         0124-03FE            100
+                         0148-03FE            100
         IDLOC            2000-2003              4           2
-        RAM              0031-005D             2D           1
+        RAM              0033-005D             2B           1
         SFR0             0000-001F             20           1
         SFR1             0080-00DD             5E           1
-        STACK            0031-005D             2D           1
+        STACK            0033-005D             2B           1
         STRCODE          0001-0003              3           2
-                         0124-03FE            2DB
+                         0148-03FE            2B7
         STRING           0001-0003              3           2
-                         0124-03FE            100
+                         0148-03FE            100
 
                                   Symbol Table
 
@@ -123,12 +123,18 @@ _ADCON1bits              (abs)       009F
 _ADRESH                  (abs)       001E
 _ANSEL                   (abs)       0091
 _ANSELbits               (abs)       0091
+_CMCON                   (abs)       0019
+_CMCONbits               (abs)       0019
 _INTCONbits              (abs)       000B
 _PIE1bits                (abs)       008C
+_PIR1bits                (abs)       000C
+_PORTA                   (abs)       0005
 _PORTC                   (abs)       0007
 _PORTCbits               (abs)       0007
+_TRISA                   (abs)       0085
 _TRISC                   (abs)       0087
 _TRISCbits               (abs)       0087
+_VRCONbits               (abs)       0099
 __CFG_BOREN$             (abs)       0000
 __CFG_CP$                (abs)       0001
 __CFG_CPD$               (abs)       0001
@@ -201,7 +207,7 @@ __Lstack                 stack       0000
 __Lstrings               strings     07FE
 __Ltext                  text        07FE
 __S0                     (abs)       2008
-__S1                     (abs)       0031
+__S1                     (abs)       0033
 __S2                     (abs)       0000
 __S3                     (abs)       0000
 ___int_sp                stack       0000
@@ -209,21 +215,21 @@ ___latbits               (abs)       0000
 ___osccal_val            osccal      03FF
 ___sp                    stack       0000
 __end_of__initialization cinit       000F
-__end_of_main            maintext    011C
-__end_of_myint           text1       0123
+__end_of_main            maintext    0133
+__end_of_myint           text1       0147
 __initialization         cinit       000C
-__pbssBANK0              bssBANK0    002F
+__pbssBANK0              bssBANK0    0031
 __pcstackBANK0           cstackBANK0 0020
-__pdataBANK0             dataBANK0   0030
-__pidataBANK0            idataBANK0  0123
+__pdataBANK0             dataBANK0   0032
+__pidataBANK0            idataBANK0  0147
 __pintentry              intentry    0004
 __pmaintext              maintext    0011
-__ptext1                 text1       011C
+__ptext1                 text1       0133
 __size_of_main           (abs)       0000
 __size_of_myint          (abs)       0000
 _main                    maintext    0011
-_myint                   text1       011C
-_wVref                   dataBANK0   0030
+_myint                   text1       0133
+_wVref                   dataBANK0   0032
 btemp                    (abs)       005E
 end_of_initialization    cinit       000F
 interrupt_function       intentry    0004
@@ -233,12 +239,13 @@ intlevel2                functab     0000
 intlevel3                functab     0000
 intlevel4                functab     0000
 intlevel5                functab     0000
-main@ErrorCode           cstackBANK0 002A
-main@NB_Wait             cstackBANK0 002D
-main@i                   cstackBANK0 0024
-main@i_250               cstackBANK0 002B
-main@i_257               cstackBANK0 0026
-main@i_258               cstackBANK0 0028
+main@ErrorCode           cstackBANK0 002C
+main@NB_Wait             cstackBANK0 002F
+main@i                   cstackBANK0 0026
+main@i_342               cstackBANK0 002D
+main@i_344               cstackBANK0 0028
+main@i_351               cstackBANK0 002A
+main@wDebounceCycle      cstackBANK0 0024
 reset_vec                reset_vec   0000
 saved_w                  (abs)       005E
 stackhi                  (abs)       0000
@@ -256,12 +263,13 @@ FUNCTION INFORMATION:
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
+  i               2   10[BANK0 ] unsigned int 
   i               2    8[BANK0 ] unsigned int 
   i               2    6[BANK0 ] unsigned int 
-  i               2    4[BANK0 ] unsigned int 
-  NB_Wait         2   13[BANK0 ] int 
-  i               2   11[BANK0 ] int 
-  ErrorCode       1   10[BANK0 ] unsigned char 
+  NB_Wait         2   15[BANK0 ] int 
+  i               2   13[BANK0 ] int 
+  wDebounceCyc    2    4[BANK0 ] int 
+  ErrorCode       1   12[BANK0 ] unsigned char 
  Return value:  Size  Location     Type
                   1    wreg      void 
  Registers used:
@@ -272,10 +280,10 @@ FUNCTION INFORMATION:
 		Unchanged: 
  Data sizes:     COMMON   BANK0
       Params:         0       0
-      Locals:         0      11
+      Locals:         0      13
       Temps:          0       2
-      Totals:         0      13
-Total ram usage:       13 bytes
+      Totals:         0      15
+Total ram usage:       15 bytes
  Hardware stack levels required when called:    1
  This function calls:
 		Nothing
@@ -286,7 +294,7 @@ Total ram usage:       13 bytes
 
  *************** function _myint *****************
  Defined at:
-		line 134 in file "CurrentDriver.c"
+		line 155 in file "CurrentDriver.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -323,8 +331,8 @@ shared
 shared estimated size: 4
 
 CurrentDriver.c
-		_main          		CODE           	0011	0000	268
-		_myint         		CODE           	011C	0000	8
+		_main          		CODE           	0011	0000	291
+		_myint         		CODE           	0133	0000	21
 
-CurrentDriver.c estimated size: 276
+CurrentDriver.c estimated size: 312
 
